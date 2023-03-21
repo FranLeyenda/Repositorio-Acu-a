@@ -1,6 +1,22 @@
+header {
+    position: sticky;
+    top: 0;
+}
+
 .logo {
     height: 80px;
     border-radius: 50px;
+    margin: 10px;
+}
+
+li .nav__a {
+    font-weight: 500;
+}
+
+li .nav__a:hover {
+    color: white;
+    font-weight: 700;
+    background-color: orange;
 }
 
 .main__container {
@@ -24,6 +40,7 @@
 
 .main__item h1{
     font-size: 70px;
+    margin: 20px;
 }
 
 .main__item button {
@@ -34,6 +51,27 @@
     background-color: #ffc107;
     font-weight: 600;
     font-size: 25px;
+}
+
+.main__item button:hover {
+    color: white;
+    background-color: orange;
+}
+
+.container__section__productos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+}
+
+.container__section__productos div {
+    margin: 100px;
+    text-align: center;
+}
+
+.container__section__productos div img {
+    height: 250px;
+    width: 250px;
 }
 
 
