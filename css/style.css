@@ -1,6 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 header {
     position: sticky;
     top: 0;
+    z-index: 9;
 }
 
 .logo {
@@ -19,7 +26,7 @@ li .nav__a:hover {
     background-color: orange;
 }
 
-.main__container {
+.main__hero {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -38,41 +45,111 @@ li .nav__a:hover {
     background-position: center center;
 }
 
-.main__item h1{
-    font-size: 70px;
-    margin: 20px;
+.main__hero div h1 {
+    font-size: 4em;
+    margin-bottom: .5em;
 }
 
-.main__item button {
+.main__hero div .btn__generales {
+    width: 150px;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.container__info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    width: 170px;
-    border-radius: 10px;
-    height: 50px;
-    background-color: #ffc107;
-    font-weight: 600;
-    font-size: 25px;
+    margin: 5em;
 }
 
-.main__item button:hover {
+.container__info div {
+    margin: 3em;
+}
+
+@media (max-width: 576px) {
+    .container__info {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.tittle__cards {
+    text-align: center;
+    margin: 6em;
+}
+
+.tittle__cards h2 {
+    font-size: 4em;
+}
+
+.container__cards {
+    display: flex;
+    justify-content: space-around;
+}
+
+.container__cards .card__item {
+    text-align: center;
+    padding: 20px;
+}
+
+@media (max-width: 880px) {
+    .container__cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .container__cards .card__item {
+        margin-bottom: 150px;
+    }
+}
+
+footer {
+background-color: #ffc107;
+}
+
+.container__footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    margin-top: 200px;
+}
+
+.footer__item {
+    background-color: #ffc107;
+    text-align: center;
+}
+
+.footer__item ul .footer__li__item{
+    font-size: 25px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+footer div ul li{
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    position: sticky;
+    list-style: none;
+
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    padding: 15px;
+}
+
+footer a:hover {
     color: white;
     background-color: orange;
+    font-weight: 700;
 }
 
-.container__section__productos {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    align-items: center;
-}
-
-.container__section__productos div {
-    margin: 100px;
-    text-align: center;
-}
-
-.container__section__productos div img {
-    height: 250px;
-    width: 250px;
-}
 
 
 
