@@ -168,6 +168,15 @@ footer a:hover {
 
 /* Pedidos */
 
+.section__titulo__pedidos {
+    text-align: center;
+    margin: 100px;
+}
+
+.section__titulo__pedidos h1 {
+    font-size: 3em;
+}
+
 .container__cards__pedidos {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -175,6 +184,7 @@ footer a:hover {
     align-items: center;
     justify-items: center;
     margin: 25px;
+    height: 135vh;
     
 }
 
@@ -187,17 +197,16 @@ footer a:hover {
     .container__cards__pedidos {
         display: flex;
         flex-direction: column;
+        height: 100%;
     }
     .container__cards__pedidos .card__item {
         margin-bottom: 150px;
     }
 }
 
-.main__footer {
-    height: 135vh;
-}
 
 /* zonas de reparto */
+
 
 .main__container__table {
     display: flex;
@@ -230,6 +239,107 @@ footer a:hover {
     padding: 20px;
     border: 1px solid black;
 }
+
+.main__table tr td:hover {
+    background-color: #198754;
+}
+
+.main__table__section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 35px;
+}
+
+.container__form {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}
+
+.container__form .form__item {
+    margin: 15px;
+}
+
+.container__form div input {
+    width: 300px;
+}
+
+
+@media (max-width: 480px) {
+    .main__container__table .main__table__box .main__table {
+        width: 300px;
+    }
+}
+
+/* Mi cuenta */
+
+
+.container__perfil {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 200px;
+    padding: 0 200px 0 200px;
+    background-color: grey;
+}
+.container__perfil div img {
+    height: 150px;
+    border-radius: 50px;
+}
+
+.container__perfil__item {
+    display: flex;
+    align-items: center;
+}
+
+.container__perfil__item h2 {
+    margin: 10px;
+}
+
+.container__section__cuenta__item {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+
+}
+
+.container__section__cuenta__item table tr {
+    border: 1px solid black;
+    height: 70px;
+    
+}
+
+.container__section__cuenta__item table tr td {
+    font-size: 1.5em;
+}
+
+.container__section__cuenta__item table tr td:hover {
+    background-color: #198754;
+    color: white;
+    font-weight: 700;
+}
+
+.container__section__cuenta__item table tr .columna__uno{
+    font-size: 25px;
+    font-weight: 800;
+    text-align: center;
+}
+
+@media (max-width: 940px) {
+    .container__perfil {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 250px;
+    }
+    .container__perfil div button {
+        width: 150px;
+    }
+}
+
 
 
 
