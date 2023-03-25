@@ -119,7 +119,8 @@ footer {
     justify-content: space-around;
     align-items: center;
     text-align: center;
-    margin-top: 200px;
+    margin-top: 300px;
+    font-size: 15px;
 }
 
 .footer__item {
@@ -164,6 +165,33 @@ footer a:hover {
     align-items: center;
     text-align: center;
     margin: 5em;
+}
+
+@media (max-height: 940px) {
+    .container__footer {
+        margin-top: 600px;
+    }
+    
+    .container__main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .container__main section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container__info div .iframe {
+        height: 200px;
+        width: 300px;
+    }
+
+    .container__main__nosotros {
+        height: 200px;
+        width: 300px;
+    }
 }
 
 /* Pedidos */
