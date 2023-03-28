@@ -1,0 +1,344 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 9;
+}
+
+.logo {
+  height: 80px;
+  border-radius: 50px;
+  margin: 10px;
+}
+
+li .nav__a {
+  font-weight: 500;
+}
+
+li .nav__a:hover {
+  color: white;
+  font-weight: 700;
+  background-color: orange;
+}
+
+.main__hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 90vh;
+  color: white;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/hero-cereales.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+main {
+  height: 90vh;
+}
+
+.main__hero div h1 {
+  font-size: 4em;
+  margin-bottom: 0.5em;
+}
+
+.main__hero div .btn__generales {
+  width: 150px;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.container__info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 5em;
+}
+
+.container__info div {
+  margin: 3em;
+}
+
+@media (max-width: 576px) {
+  .container__info {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.tittle__cards {
+  text-align: center;
+  margin: 6em;
+}
+
+.tittle__cards h2 {
+  font-size: 4em;
+}
+
+.container__cards {
+  display: flex;
+  justify-content: space-around;
+}
+
+.container__cards .card__item {
+  text-align: center;
+  padding: 20px;
+}
+
+@media (max-width: 880px) {
+  .container__cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .container__cards .card__item {
+    margin-bottom: 150px;
+  }
+}
+footer {
+  background-color: #ffc107;
+  bottom: 0;
+}
+
+.container__footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  margin-top: 300px;
+  font-size: 15px;
+}
+
+.footer__item {
+  background-color: #ffc107;
+  text-align: center;
+}
+
+.footer__item ul .footer__li__item {
+  font-size: 25px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+footer div ul li {
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
+  position: sticky;
+  list-style: none;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  padding: 15px;
+}
+
+footer a:hover {
+  color: white;
+  background-color: orange;
+  font-weight: 700;
+}
+
+/* Sobre nosotros */
+.container__main__nosotros {
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+  align-items: center;
+  text-align: center;
+  margin: 5em;
+}
+
+@media (max-height: 940px) {
+  .container__footer {
+    margin-top: 900px;
+  }
+  .container__main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .container__main section {
+    display: flex;
+    flex-direction: column;
+  }
+  .container__info div .iframe {
+    height: 200px;
+    width: 300px;
+  }
+  .container__main__nosotros {
+    height: 200px;
+    width: 300px;
+  }
+}
+/* Pedidos */
+.section__titulo__pedidos {
+  text-align: center;
+  margin: 100px;
+}
+
+.section__titulo__pedidos h1 {
+  font-size: 3em;
+}
+
+.container__cards__pedidos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 450px 450px 450px;
+  align-items: center;
+  justify-items: center;
+  margin: 25px;
+  height: 135vh;
+}
+
+.container__cards__pedidos .card__item {
+  text-align: center;
+  padding: 15px;
+}
+
+@media (max-width: 940px) {
+  .container__cards__pedidos {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  .container__cards__pedidos .card__item {
+    margin-bottom: 150px;
+  }
+}
+/* zonas de reparto */
+.main__container__table {
+  display: flex;
+  flex-direction: column;
+}
+
+.main__container__table .main__table__tittle {
+  text-align: center;
+  margin-top: 70px;
+}
+
+.main__container__table .main__table {
+  margin: auto;
+  margin-top: 70px;
+}
+
+.main__table {
+  border: 2px solid #198754;
+  background-color: #21b36f;
+  text-align: center;
+}
+
+.main__table tr {
+  height: 50px;
+  border: 1px solid black;
+}
+
+.main__table tr td {
+  font-weight: 600;
+  padding: 20px;
+  border: 1px solid black;
+}
+
+.main__table tr td:hover {
+  background-color: #198754;
+}
+
+.main__table__section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 35px;
+}
+
+.container__form {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+}
+
+.container__form .form__item {
+  margin: 15px;
+}
+
+.container__form div input {
+  width: 300px;
+}
+
+@media (max-width: 480px) {
+  .main__container__table .main__table__box .main__table {
+    width: 300px;
+  }
+}
+/* Mi cuenta */
+.container__perfil {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 200px;
+  padding: 0 200px 0 200px;
+  background-color: grey;
+}
+
+.container__perfil div img {
+  height: 150px;
+  border-radius: 50px;
+}
+
+.container__perfil__item {
+  display: flex;
+  align-items: center;
+}
+
+.container__perfil__item h2 {
+  margin: 10px;
+}
+
+.container__section__cuenta__item {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+}
+
+.container__section__cuenta__item table tr {
+  border: 1px solid black;
+  height: 70px;
+}
+
+.container__section__cuenta__item table tr td {
+  font-size: 1.5em;
+}
+
+.container__section__cuenta__item table tr td:hover {
+  background-color: #198754;
+  color: white;
+  font-weight: 700;
+}
+
+.container__section__cuenta__item table tr .columna__uno {
+  font-size: 25px;
+  font-weight: 800;
+  text-align: center;
+}
+
+@media (max-width: 940px) {
+  .container__perfil {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 250px;
+  }
+  .container__perfil div button {
+    width: 150px;
+  }
+}/*# sourceMappingURL=main.css.map */
