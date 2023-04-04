@@ -128,14 +128,10 @@ main .box__article .box__main__item .box__img .imagen {
 .container__cards {
   display: flex;
   justify-content: space-around;
-  margin-top: 10em;
-}
-.container__cards .card__item {
-  text-align: center;
-  padding: 20px;
+  margin: 10em;
 }
 @media (max-width: 880px) {
-  .container__cards .container__cards {
+  .container__cards {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -144,31 +140,54 @@ main .box__article .box__main__item .box__img .imagen {
     margin-bottom: 150px;
   }
 }
+.container__cards .card__item {
+  text-align: center;
+  padding: 20px;
+}
 
 /* FOOTER */
-.container__footer__fr {
+footer {
+  max-width: 100%;
+}
+footer .container__footer__fr {
   display: flex;
   justify-content: space-around;
   align-items: center;
   background-color: #ffbf00;
   margin-top: 10em;
 }
-.container__footer__fr .container__footer__item ul {
+@media (max-width: 880px) {
+  footer .container__footer__fr {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+footer .container__footer__fr .container__footer__item {
+  text-align: center;
+}
+@media (max-width: 880px) {
+  footer .container__footer__fr .container__footer__item {
+    margin: 2em 0 2em 0;
+  }
+}
+footer .container__footer__fr .container__footer__item ul {
   list-style: none;
 }
-.container__footer__fr .container__footer__item ul .footer__item {
-  font-size: 1.7em;
+footer .container__footer__fr .container__footer__item ul .footer__item {
+  font-size: 1.5em;
   text-decoration: underline;
 }
-.container__footer__fr .container__footer__item ul li {
+footer .container__footer__fr .container__footer__item ul li {
   font-size: 1em;
 }
-.container__footer__fr .container__footer__item ul li a {
+footer .container__footer__fr .container__footer__item ul li a {
   text-decoration: none;
   color: black;
   transition: all 0.2s;
 }
-.container__footer__fr .container__footer__item ul li a:hover {
+footer .container__footer__fr .container__footer__item ul li a:hover {
   color: white;
   background-color: #bb8c00;
 }
