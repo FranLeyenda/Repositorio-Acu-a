@@ -9,106 +9,166 @@ header {
     position: sticky;
     top: 0;
     z-index: 9;
-}
-
-.logo {
-    height: 80px;
-    border-radius: 50px;
-    margin: 10px;
-}
-
-li .nav__a {
-    font-weight: 500;
-}
-
-li .nav__a:hover {
-    color: white;
-    font-weight: 700;
-    background-color: orange;
-}
-
-.main__hero {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    height: 90vh;
-    color: white;
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-    )
-    ,
-    url(../img/hero-cereales.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-}
-
-main {
-    height: 90vh;
-}
-
-.main__hero div h1 {
-    font-size: 4em;
-    margin-bottom: .5em;
-}
-
-.main__hero div .btn__generales {
-    width: 150px;
-    font-weight: 500;
-    font-size: 20px;
-}
-
-.container__info {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin: 5em;
-}
-
-.container__info div {
-    margin: 3em;
-}
-
-@media (max-width: 576px) {
-    .container__info {
-        display: flex;
-        flex-direction: column;
+    .navbar {
+        .logo {
+            height: 80px;
+            border-radius: 50px;
+            margin: 10px;
+        }
+        div {
+            ul {
+                li {
+                    a:hover {
+                        color: white;
+                        background-color: #9e7700;
+                    }
+                }
+            }
+        }
     }
 }
 
-.tittle__cards {
-    text-align: center;
-    margin: 6em;
+main { 
+
+    /* HERO */
+
+    .main__hero {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 90vh;
+        color: white;
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,
+        url(../img/hero-cereales.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        h1 {
+            font-size: 4em;
+            margin: .5em;
+        }
+        button {
+            padding: .6em 3.4em;
+            border-radius: 12px;
+            font-size: 1.2em;
+        }
+    }
+    
+    /* ARTICULO INICIO */
+
+    .box__main__inicio {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 7em;
+        @media (max-width: 800px) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .box__main__item {
+            margin: 2em;
+            .box__main__div {
+                max-width: 100%;
+                text-align: center;
+                h1 {
+                    font-size: 3em;
+                    margin-bottom: 1em;
+                }
+                p {
+                    font-size: 1.5em;
+                    margin: 1em;
+                }
+                @media (max-width:800px) {
+                    
+                    font-size: 1em;
+                    margin: 1em;
+                }
+                @media (max-width: 800px) {
+                    .imagen {
+                        width: 100%;
+                    }
+                    .box__main__img {
+                        margin: .5em;
+                    }
+                }
+            }
+        }
+    }
+    .box__article {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+        @media (max-width: 800px) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .box__main__item:nth-child(1) {
+            .box__main__div {
+                display: inline;
+                width: 22em;
+            }
+        }
+        .box__main__item {  
+            .box__main__div {
+                h2 {
+                    font-size: 2.5em;
+                }
+                p {
+                    margin: 1px;
+                }
+            }
+            .box__img {
+                .imagen {
+                    max-width: 100%;
+                }
+                @media (max-width: 800px) {
+                    .imagen {
+                        width: 100%;
+                    }
+                    .box__main__img {
+                        margin: .5em;
+                    }
+                }
+            }
+        }
+    }
 }
 
-.tittle__cards h2 {
-    font-size: 4em;
-}
+/* CARTAS DE PRODUCTOS-INICIO */
 
 .container__cards {
     display: flex;
     justify-content: space-around;
+    margin-top: 10em;
+    .card__item {
+        text-align: center;
+        padding: 20px;
+    }
+    @media (max-width: 880px) {
+        .container__cards {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .card__item {
+            margin-bottom: 150px;
+        }
+    }
+
 }
 
-.container__cards .card__item {
-    text-align: center;
-    padding: 20px;
-}
-
-@media (max-width: 880px) {
-    .container__cards {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .container__cards .card__item {
-        margin-bottom: 150px;
-    }
-}
+/* FOOTER */
 
 footer {
     background-color: #ffc107;
