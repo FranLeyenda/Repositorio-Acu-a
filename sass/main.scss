@@ -20,7 +20,7 @@ header {
                 li {
                     a:hover {
                         color: white;
-                        background-color: #9e7700;
+                        background-color: #bb8c00;
                     }
                 }
             }
@@ -170,51 +170,33 @@ main {
 
 /* FOOTER */
 
-footer {
-    background-color: #ffc107;
-    bottom: 0;
-}
-
-.container__footer {
+.container__footer__fr {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    text-align: center;
-    margin-top: 300px;
-    font-size: 15px;
-}
-
-.footer__item {
-    background-color: #ffc107;
-    text-align: center;
-}
-
-.footer__item ul .footer__li__item{
-    font-size: 25px;
-    margin-bottom: 20px;
-    font-weight: 600;
-}
-
-footer div ul li{
-    display: flex;
-    flex-direction: column;
-    margin: 15px;
-    position: sticky;
-    list-style: none;
-
-}
-
-footer a {
-    text-decoration: none;
-    color: white;
-    font-weight: 500;
-    padding: 15px;
-}
-
-footer a:hover {
-    color: white;
-    background-color: orange;
-    font-weight: 700;
+    background-color: #ffbf00;
+    margin-top: 10em;
+    .container__footer__item {
+        ul {
+            list-style: none;
+            .footer__item {
+                font-size: 1.7em;
+                text-decoration: underline;
+            }
+            li {
+                font-size: 1em;
+                a {
+                   text-decoration: none; 
+                   color: black;
+                   transition: all .2s;
+                   &:hover {
+                    color: white;
+                    background-color: #bb8c00;
+                   }
+                }
+            }
+        }
+    }
 }
 
 /* Sobre nosotros */
