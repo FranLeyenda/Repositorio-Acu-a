@@ -1,0 +1,141 @@
+main { 
+
+    /* HERO */
+
+    .main__hero {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 90vh;
+        color: white;
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,
+        url(../img/hero-cereales.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        h1 {
+            font-size: 4em;
+            margin: .5em;
+        }
+        button {
+            padding: .6em 3.4em;
+            border-radius: 12px;
+            font-size: 1.2em;
+        }
+    }
+    
+    /* ARTICULO INICIO */
+
+    .box__main__inicio {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 7em;
+        @media (max-width: 800px) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .box__main__item {
+            margin: 1.5em 2em;
+            @media (max-width:880px) {
+                margin-top: 0;
+            }
+            .box__main__div {
+                max-width: 100%;
+                text-align: center;
+                h2 {
+                    font-size: 2.5em;
+                    margin-bottom: .2em;
+                }
+                p {
+                    font-size: 1.5em;
+                    margin: 1em;
+                }
+                @media (max-width:800px) {
+                    
+                    font-size: 1em;
+                    margin: 1em;
+                }
+                @media (max-width: 800px) {
+                    .imagen {
+                        width: 100%;
+                    }
+                    .box__main__img {
+                        margin: .5em;
+                    }
+                }
+            }
+        }
+    }
+    .box__article {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+        @media (max-width: 800px) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .box__main__item:nth-child(1) {
+            .box__main__div {
+                display: inline;
+                width: 22em;
+            }
+        }
+        .box__main__item {  
+            .box__main__div {
+                h2 {
+                    font-size: 2em;
+                    margin-bottom: .7em;
+                }
+                p {
+                    margin: 1px;
+                }
+            }
+            .box__img {
+                .imagen {
+                    max-width: 100%;
+                }
+                @media (max-width: 800px) {
+                    .imagen {
+                        width: 100%;
+                    }
+                    .box__main__img {
+                        margin: .5em;
+                    }
+                }
+            }
+        }
+    }
+}
+/* CARTAS DE PRODUCTOS-INICIO */
+
+.container__cards {
+    display: flex;
+    justify-content: space-around;
+    margin: 10em;
+    @media (max-width: 880px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+        .card__item {
+            margin-bottom: 150px;
+        }
+    }
+    .card__item {
+        text-align: center;
+        padding: 20px;
+    }
+    
+
+}
