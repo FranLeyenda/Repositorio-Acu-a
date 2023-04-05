@@ -1,8 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   max-width: 100%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
 }
 
 header {
@@ -193,38 +198,6 @@ footer .container__footer__fr .container__footer__item ul li a:hover {
 }
 
 /* Sobre nosotros */
-.container__main__nosotros {
-  display: flex;
-  justify-content: center;
-  flex-direction: row-reverse;
-  align-items: center;
-  text-align: center;
-  margin: 5em;
-}
-
-@media (max-height: 940px) {
-  .container__footer {
-    margin-top: 900px;
-  }
-  .container__main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .container__main section {
-    display: flex;
-    flex-direction: column;
-  }
-  .container__info div .iframe {
-    height: 200px;
-    width: 300px;
-  }
-  .container__main__nosotros {
-    height: 200px;
-    width: 300px;
-  }
-}
 /* Pedidos */
 .section__titulo__pedidos {
   text-align: center;
@@ -325,65 +298,57 @@ footer .container__footer__fr .container__footer__item ul li a:hover {
   }
 }
 /* Mi cuenta */
-.container__perfil {
+.box__form {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 200px;
-  padding: 0 200px 0 200px;
-  background-color: grey;
+  min-height: 100vh;
 }
-
-.container__perfil div img {
-  height: 150px;
-  border-radius: 50px;
-}
-
-.container__perfil__item {
-  display: flex;
-  align-items: center;
-}
-
-.container__perfil__item h2 {
-  margin: 10px;
-}
-
-.container__section__cuenta__item {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  border: 1px solid black;
-}
-
-.container__section__cuenta__item table tr {
-  border: 1px solid black;
-  height: 70px;
-}
-
-.container__section__cuenta__item table tr td {
-  font-size: 1.5em;
-}
-
-.container__section__cuenta__item table tr td:hover {
-  background-color: #198754;
-  color: white;
-  font-weight: 700;
-}
-
-.container__section__cuenta__item table tr .columna__uno {
-  font-size: 25px;
-  font-weight: 800;
+.box__form .form {
+  margin: auto;
+  width: 90%;
+  max-width: 400px;
+  padding: 4.5em 3em;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.8);
   text-align: center;
 }
-
-@media (max-width: 940px) {
-  .container__perfil {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    height: 250px;
-  }
-  .container__perfil div button {
-    width: 150px;
-  }
+.box__form .form .form__tittle {
+  font-size: 2rem;
+  margin-bottom: 0.5em;
+}
+.box__form .form .form__paragraph {
+  font-weight: 300;
+}
+.box__form .form .form__link {
+  font-weight: 400;
+  color: black;
+}
+.box__form .form .form__container {
+  margin-top: 3em;
+  display: grid;
+  gap: 2.5em;
+}
+.box__form .form .form__container .form__group {
+  position: relative;
+  --colorForm: #5757577e;
+}
+.box__form .form .form__container .form__group .form__input {
+  width: 100%;
+  font-size: 1rem;
+  padding: 0.6em 0.3em;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid var(--colorForm);
+  font-family: "Roboto", sans-serif;
+}
+.box__form .form .form__container .form__group .form__label {
+  color: var(--colorForm);
+  cursor: pointer;
+}
+.box__form .form .form__submit {
+  background-color: #198754;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  padding: 0.8em 0;
+  border-radius: 0.5em;
 }/*# sourceMappingURL=main.css.map */
