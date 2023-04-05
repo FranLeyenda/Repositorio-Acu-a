@@ -221,11 +221,22 @@ footer {
     }
 }
 
-/* Sobre nosotros */
+/* GALERIA */
 
+main {
+    .container__galery {
+        padding: 1em 3em;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 5px;
+        @media (max-width:880px) {
+            grid-template-columns: repeat(2,1fr);
+            padding: .5em 2em;
+        }
+    }
+}
 
-
-/* Pedidos */
+/* PEDIDOS */
 
 .section__titulo__pedidos {
     text-align: center;

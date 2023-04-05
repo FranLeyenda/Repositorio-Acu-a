@@ -197,8 +197,21 @@ footer .container__footer__fr .container__footer__item ul li a:hover {
   background-color: #bb8c00;
 }
 
-/* Sobre nosotros */
-/* Pedidos */
+/* GALERIA */
+main .container__galery {
+  padding: 1em 3em;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+}
+@media (max-width: 880px) {
+  main .container__galery {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0.5em 2em;
+  }
+}
+
+/* PEDIDOS */
 .section__titulo__pedidos {
   text-align: center;
   margin: 100px;
