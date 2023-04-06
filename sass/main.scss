@@ -4,6 +4,7 @@
 @import 'vars';
 @import 'index';
 @import 'galeria';
+@import 'cereales';
 
 
 * {
@@ -91,45 +92,6 @@ footer {
         }
     }
 }
-
-/* PEDIDOS */
-
-.section__titulo__pedidos {
-    text-align: center;
-    margin: 100px;
-}
-
-.section__titulo__pedidos h1 {
-    font-size: 3em;
-}
-
-.container__cards__pedidos {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 450px 450px 450px;
-    align-items: center;
-    justify-items: center;
-    margin: 25px;
-    height: 135vh;
-    
-}
-
-.container__cards__pedidos .card__item {
-    text-align: center;
-    padding: 15px;
-}
-
-@media (max-width: 940px) {
-    .container__cards__pedidos {
-        display: flex;
-        flex-direction: column;
-        height: 100%;
-    }
-    .container__cards__pedidos .card__item {
-        margin-bottom: 150px;
-    }
-}
-
 
 /* zonas de reparto */
 
