@@ -132,6 +132,7 @@ main .box__article .box__main__item .box__img .imagen {
 
 /* GALERIA */
 main .container__galery {
+  margin-bottom: 10 em;
   padding: 1em 3em;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -336,6 +337,8 @@ main .container__galery {
 }
 
 body {
+  margin: 0;
+  padding: 0;
   font-family: "Roboto", sans-serif;
 }
 
@@ -356,51 +359,10 @@ header .navbar div ul li a:hover {
 }
 
 /* FOOTER */
-footer {
-  background-color: #ffbf00;
-  margin-top: 10em;
-}
-footer .container__footer__fr {
-  max-width: 100%;
-  height: 300px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-@media (max-width: 880px) {
-  footer .container__footer__fr {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-}
-footer .container__footer__fr .container__footer__item {
-  text-align: center;
-}
-@media (max-width: 880px) {
-  footer .container__footer__fr .container__footer__item {
-    margin: 2em 0 2em 0;
-  }
-}
-footer .container__footer__fr .container__footer__item ul {
-  list-style: none;
-}
-footer .container__footer__fr .container__footer__item ul .footer__item {
-  font-size: 1.5em;
-  text-decoration: underline;
-}
-footer .container__footer__fr .container__footer__item ul li {
-  margin: 1em;
-  font-size: 1em;
-}
-footer .container__footer__fr .container__footer__item ul li a {
-  padding: 10px;
-  text-decoration: none;
+.box__footer div a {
   color: black;
-  transition: all 0.2s;
+  text-decoration: none;
 }
-footer .container__footer__fr .container__footer__item ul li a:hover {
+.box__footer div a:hover {
   color: white;
-  background-color: #bb8c00;
 }/*# sourceMappingURL=main.css.map */

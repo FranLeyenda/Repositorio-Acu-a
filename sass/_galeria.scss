@@ -2,6 +2,7 @@
 
 main {
     .container__galery {
+        margin-bottom: 10 em;
         padding: 1em 3em;
         display: grid;
         grid-template-columns: repeat(3,1fr);
