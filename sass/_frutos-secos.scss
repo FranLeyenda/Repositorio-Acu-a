@@ -1,0 +1,67 @@
+/* FRUTOS SECOS */
+
+
+.main__container__table {
+    display: flex;
+    flex-direction: column;
+}
+
+.main__container__table .main__table__tittle {
+    text-align: center;
+    margin-top: 70px;
+}
+
+.main__container__table .main__table {
+    margin: auto;
+    margin-top: 70px;
+}
+
+.main__table {
+    border: 2px solid #198754;
+    background-color: #21b36f;
+    text-align: center;
+}
+
+.main__table tr {
+    height: 50px;
+    border: 1px solid black;
+}
+
+.main__table tr td {
+    font-weight: 600;
+    padding: 20px;
+    border: 1px solid black;
+}
+
+.main__table tr td:hover {
+    background-color: #198754;
+}
+
+.main__table__section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 35px;
+}
+
+.container__form {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}
+
+.container__form .form__item {
+    margin: 15px;
+}
+
+.container__form div input {
+    width: 300px;
+}
+
+
+@media (max-width: 480px) {
+    .main__container__table .main__table__box .main__table {
+        width: 300px;
+    }
+}

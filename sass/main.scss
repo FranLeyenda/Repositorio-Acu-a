@@ -5,6 +5,8 @@
 @import 'index';
 @import 'galeria';
 @import 'cereales';
+@import 'frutos-secos';
+@import 'mi-cuenta';
 
 
 * {
@@ -93,131 +95,7 @@ footer {
     }
 }
 
-/* zonas de reparto */
 
-
-.main__container__table {
-    display: flex;
-    flex-direction: column;
-}
-
-.main__container__table .main__table__tittle {
-    text-align: center;
-    margin-top: 70px;
-}
-
-.main__container__table .main__table {
-    margin: auto;
-    margin-top: 70px;
-}
-
-.main__table {
-    border: 2px solid #198754;
-    background-color: #21b36f;
-    text-align: center;
-}
-
-.main__table tr {
-    height: 50px;
-    border: 1px solid black;
-}
-
-.main__table tr td {
-    font-weight: 600;
-    padding: 20px;
-    border: 1px solid black;
-}
-
-.main__table tr td:hover {
-    background-color: #198754;
-}
-
-.main__table__section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin-top: 35px;
-}
-
-.container__form {
-    display: flex;
-    flex-direction: column;
-    text-align: start;
-}
-
-.container__form .form__item {
-    margin: 15px;
-}
-
-.container__form div input {
-    width: 300px;
-}
-
-
-@media (max-width: 480px) {
-    .main__container__table .main__table__box .main__table {
-        width: 300px;
-    }
-}
-
-/* Mi cuenta */
-
-
-.box__form{
-    display: flex;
-    min-height: 100vh;
-    .form {
-        margin: auto;
-        width: 90%;
-        max-width: 400px;
-        padding: 4.5em 3em;
-        border-radius: 10px;
-        box-shadow: 0 5px 10px -5px rgb(0 0 0 / 80%);
-        text-align: center;
-        .form__tittle {
-            font-size: 2rem;
-            margin-bottom: .5em;
-        }
-        .form__paragraph {
-            font-weight: 300;
-        }
-        .form__link {
-            font-weight: 400;
-            color: black;
-        }
-        .form__container {
-            margin-top: 3em;
-            display: grid;
-            gap: 2.5em;
-            .form__group {
-                position: relative;
-                --colorForm: #5757577e;
-                .form__input {
-                    width: 100%;
-                    font-size: 1rem;
-                    padding: .6em .3em;
-                    border: none;
-                    outline: none;
-                    border-bottom: 1px solid var(--colorForm);
-                    font-family: 'Roboto', sans-serif;
-                }
-                .form__label {
-                    color: var(--colorForm);
-                    cursor: pointer;
-                }
-            }
-        }
-        .form__submit {
-            background-color: #198754;
-            color: #fff;
-            font-family: 'Roboto', sans-serif;
-            font-weight: 300;
-            padding: .8em 0;
-            border-radius: .5em;
-        }
-    }
-}
 
 
 
