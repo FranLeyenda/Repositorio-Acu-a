@@ -1,15 +1,80 @@
 /* GALERIA */
 
 main {
-    .container__galery {
-        margin-bottom: 10 em;
-        padding: 1em 3em;
-        display: grid;
-        grid-template-columns: repeat(3,1fr);
-        gap: 5px;
-        @media (max-width:880px) {
-            grid-template-columns: repeat(2,1fr);
-            padding: .5em 2em;
+    .container__contacto {
+        background-color: #f2f2ff;
+        border-radius: 1em;
+        margin: 8em;
+        @media (max-width: 900px) {
+            margin: 8em 1em;
+        }
+        @media (min-width: 901px) and (max-width: 992px) {
+            margin: 1em;
+        }
+        .box__contacto {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 70vh;
+            @media (max-width: 900px) {
+                display: flex;
+                flex-direction: column;
+                height: 155vh;
+            }
+            .contacto__item {
+                padding: 6em;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                font-size: 2em;
+                @media (max-width: 900px) {
+                    padding: 1.5em;
+                }
+                @media (min-width: 901px) and (max-width: 1629px) {
+                    padding: 0;
+                }
+                h1 {
+                    padding: .5em 0;
+                }
+                iframe {
+                    height: 15em;
+                    @media (min-width: 993px) and (max-width: 1629px) {
+                        height: 10em;
+                        width: auto;
+                    }
+                }
+            }
+            .contacto__form {
+                display: flex;
+                flex-direction: column;
+                padding: 6em 10em;
+                @media (max-width: 900px) {
+                    padding: 3em;
+                    margin-bottom: 5em;
+                }
+                @media (min-width: 901px) and (max-width: 1629px) {
+                    padding: 2em;
+                    margin-bottom: 2em;
+                }
+                label {
+                    margin: 1em 0;
+                    font-size: 1.3em;
+                }
+                textarea {
+                    max-height: 270px;
+                }
+                button {
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 1.5em;
+                    width: 8em;
+                }
+                input {
+                    border-radius: 5px;
+                    border: 1px solid black;
+                }
+            }    
         }
     }
 }

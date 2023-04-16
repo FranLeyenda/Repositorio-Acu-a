@@ -125,10 +125,15 @@ main .box__article .box__main__item .box__img .imagen {
 }
 
 /* CARTAS DE PRODUCTOS-INICIO */
+.productos {
+  text-align: center;
+  margin-top: 5em;
+}
+
 .container__cards {
   display: flex;
   justify-content: space-around;
-  margin: 10em;
+  margin: 6em;
 }
 @media (max-width: 880px) {
   .container__cards {
@@ -146,18 +151,97 @@ main .box__article .box__main__item .box__img .imagen {
 }
 
 /* GALERIA */
-main .container__galery {
-  margin-bottom: 10 em;
-  padding: 1em 3em;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 5px;
+main .container__contacto {
+  background-color: #f2f2ff;
+  border-radius: 1em;
+  margin: 8em;
 }
-@media (max-width: 880px) {
-  main .container__galery {
-    grid-template-columns: repeat(2, 1fr);
-    padding: 0.5em 2em;
+@media (max-width: 900px) {
+  main .container__contacto {
+    margin: 8em 1em;
   }
+}
+@media (min-width: 901px) and (max-width: 992px) {
+  main .container__contacto {
+    margin: 1em;
+  }
+}
+main .container__contacto .box__contacto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
+@media (max-width: 900px) {
+  main .container__contacto .box__contacto {
+    display: flex;
+    flex-direction: column;
+    height: 155vh;
+  }
+}
+main .container__contacto .box__contacto .contacto__item {
+  padding: 6em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
+}
+@media (max-width: 900px) {
+  main .container__contacto .box__contacto .contacto__item {
+    padding: 1.5em;
+  }
+}
+@media (min-width: 901px) and (max-width: 1629px) {
+  main .container__contacto .box__contacto .contacto__item {
+    padding: 0;
+  }
+}
+main .container__contacto .box__contacto .contacto__item h1 {
+  padding: 0.5em 0;
+}
+main .container__contacto .box__contacto .contacto__item iframe {
+  height: 15em;
+}
+@media (min-width: 993px) and (max-width: 1629px) {
+  main .container__contacto .box__contacto .contacto__item iframe {
+    height: 10em;
+    width: auto;
+  }
+}
+main .container__contacto .box__contacto .contacto__form {
+  display: flex;
+  flex-direction: column;
+  padding: 6em 10em;
+}
+@media (max-width: 900px) {
+  main .container__contacto .box__contacto .contacto__form {
+    padding: 3em;
+    margin-bottom: 5em;
+  }
+}
+@media (min-width: 901px) and (max-width: 1629px) {
+  main .container__contacto .box__contacto .contacto__form {
+    padding: 2em;
+    margin-bottom: 2em;
+  }
+}
+main .container__contacto .box__contacto .contacto__form label {
+  margin: 1em 0;
+  font-size: 1.3em;
+}
+main .container__contacto .box__contacto .contacto__form textarea {
+  max-height: 270px;
+}
+main .container__contacto .box__contacto .contacto__form button {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5em;
+  width: 8em;
+}
+main .container__contacto .box__contacto .contacto__form input {
+  border-radius: 5px;
+  border: 1px solid black;
 }
 
 /* CEREALES */
@@ -317,6 +401,10 @@ main .container__galery {
   margin-top: 3em;
   display: grid;
   gap: 2.5em;
+}
+.box__form .form .form__container input {
+  font-size: 1.1em;
+  font-weight: 300;
 }
 .box__form .form .form__container .form__group {
   position: relative;

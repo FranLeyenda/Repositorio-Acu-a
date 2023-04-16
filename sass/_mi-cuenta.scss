@@ -27,6 +27,10 @@
             margin-top: 3em;
             display: grid;
             gap: 2.5em;
+            input {
+                font-size: 1.1em;
+                font-weight: 300;
+            }
             .form__group {
                 position: relative;
                 --colorForm: #5757577e;
