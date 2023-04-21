@@ -189,7 +189,7 @@ main .container__contacto .box__contacto .contacto__item {
 }
 @media (max-width: 900px) {
   main .container__contacto .box__contacto .contacto__item {
-    padding: 1.5em;
+    padding: 0.2em;
   }
 }
 @media (min-width: 901px) and (max-width: 1629px) {
