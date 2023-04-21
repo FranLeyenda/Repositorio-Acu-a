@@ -200,6 +200,22 @@ main .container__contacto .box__contacto .contacto__item {
 main .container__contacto .box__contacto .contacto__item h1 {
   padding: 0.5em 0;
 }
+@media (max-width: 370px) {
+  main .container__contacto .box__contacto .contacto__item h1 {
+    font-size: 1em;
+  }
+}
+@media (max-width: 370px) {
+  main .container__contacto .box__contacto .contacto__item p {
+    text-align: center;
+    font-size: 0.7em;
+  }
+}
+@media (min-width: 371px) {
+  main .container__contacto .box__contacto .contacto__item p {
+    font-size: 0.7em;
+  }
+}
 main .container__contacto .box__contacto .contacto__item iframe {
   height: 15em;
 }
